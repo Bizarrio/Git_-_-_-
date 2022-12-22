@@ -43,7 +43,7 @@ class Example(QMainWindow, Ui_Form):
 
     def make_circle(self):
         self.circle_size = random.randint(50, 150)
-        self.color = self.color
+        self.color = QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
         self.clicked = True
         self.update()
 
